@@ -1,0 +1,4 @@
+<ul class="abas-etiquetas">
+    <li class="aba" [class.ativa]="abaAtual.getValue()==aba.nome" *ngFor="let aba of abas" (click)="defineAba(aba.nome)">{{aba.nome}}</li>
+</ul>
+<ng-content ></ng-content>

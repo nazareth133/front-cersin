@@ -1,0 +1,96 @@
+<div class="page-layout blank" fusePerfectScrollbar>
+  <div class="header accent p-24 h-120" fxLayout="row" fxLayoutAlign="start center">
+    <div fxLayout="column" fxLayoutAlign="center start">
+      <div class="titulo">
+        <p><strong>Certidão de Registro Sindical</strong></p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="paragrafoExtrato">
+      <strong>Emitir Certidão Sindical</strong>
+    </p>
+    <h3 class="classe"><strong>Como solicitar</strong></h3>
+    <h5>
+      Validar Certidão
+    </h5>
+
+    <!---botões de emissão e validação -->
+    <fieldset fxLayoutAlign="center center">
+      <fieldset fxLayoutAlign="center center">
+        <div class="fieldset">
+          <div id="centro">
+            <mat-button-toggle-group appearance="legacy" [(ngModel)]="avaliacao" name="fontStyle"
+              aria-label="Font Style">
+              <mat-button-toggle [value]=true>Emissão de Certidão</mat-button-toggle>
+              <mat-button-toggle [value]=false>Validação de Certidão</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+
+          <ng-template [ngIf]="avaliacao" [ngIfElse]="validarBlock">
+            <h1>Construindo</h1>
+            <h1>Construindo</h1>
+            <h1>Construindo</h1>
+            <h1>Construindo</h1>
+            <h1>Construindo</h1>
+            <h1>Construindo</h1>
+          </ng-template>
+        </div>
+      </fieldset>
+    </fieldset>
+
+  </div>
+</div>
+
+<!---html validação de certidão -->
+<ng-template #validarBlock>
+  <ng-template [ngIf]="avaliacaoNegada" [ngIfElse]="validarNegadoBlock" #dadosValidarBlock>
+    <p>Validação de certidão</p>
+    <div class="especo">
+      <label>Código de validação</label>
+    </div>
+    <div class="meio">
+      <input type="text" name="name" />
+    </div>
+
+    <div class="especo">
+      <label>Data de emissão da certidão</label>
+    </div>
+    <div class="meio">
+      <input id="date" type="date">
+    </div>
+
+    <div class="especo">
+      <label>Horáriode emissão da certidão</label>
+    </div>
+    <div class="meio">
+      <input id="date" type="time">
+    </div>
+    <div class="reCapatcha">
+      <re-captcha (resolved)="resolved($event)" siteKey="YOUR_SITE_KEY"></re-captcha>
+    </div>
+    <div class="meio">
+      <div class="button">
+        <button mat-raised-button (click)="validar()" color="primary">Validar</button>
+      </div>
+      <div class="button2">
+        <button mat-raised-button color="primary">Limpar</button>
+      </div>
+    </div>
+  </ng-template>
+</ng-template>
+
+<!---html avaliação negada -->
+<ng-template #validarNegadoBlock>
+  <p class="titulo2">
+    <strong>Validação de certidão</strong>
+  </p>
+  <p class="texto">Documento não autêntico. Os dados informados não conferem com nenhum documento emitido pelo site
+    http://trabalho.gov.br/sindicatos-certidão-sindical/verificar-certidão-sindical> do Ministério da Economia Verifique
+    se os dados fora informados corretamente e tente novamente.</p>
+
+  <div class="button3">
+    <button mat-raised-button color="primary" (click)="novaConsulta()">Nova Consulta</button>
+  </div>
+
+</ng-template>

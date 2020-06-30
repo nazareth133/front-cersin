@@ -1,0 +1,30 @@
+<div class="versao">versão: {{versao}} </div>
+
+<!--<section id="mensagens" app-mensagens></section>-->
+<section>
+    <app-mensagens></app-mensagens>
+    <section>
+
+        <header id="cabecalho" app-cabecalho [info]="basicInfo"></header>
+
+       <!--  <section>
+            <app-breadcrumb></app-breadcrumb>
+        </section> -->
+
+        <main *ngIf="pronto">
+            <router-outlet></router-outlet>
+        </main>
+
+
+        <section>
+            
+
+        </section>
+
+        <app-voltar-topo></app-voltar-topo>
+
+        <footer>
+            <app-footer></app-footer>
+        </footer>
+    </section>
+</section>

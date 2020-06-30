@@ -1,0 +1,6 @@
+<button (click)="toggleMenu()" class="trigger circle" type="button"></button>
+<section [ngClass]="{'dropdown-menu': true, 'open': open, 'closed': !open}">
+  <h1>{{titulo}}</h1>
+  <a *ngFor="let menuItem of menuItems" title="{{menuItem.descricao}}"
+     routerLink="{{menuItem.url}}">{{menuItem.titulo}}</a>
+</section>

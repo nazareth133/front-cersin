@@ -1,0 +1,15 @@
+:host {
+    display: contents;
+}
+
+svg {
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+svg rect{
+    transition: 0.3s all;
+}
+svg:hover rect{
+    filter: drop-shadow( 2px 2px 2px rgba(255, 255, 255, .4));
+}

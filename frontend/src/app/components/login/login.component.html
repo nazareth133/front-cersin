@@ -1,0 +1,13 @@
+<form #login = "ngForm" (ngSubmit) = "onClickSubmit(login.value)" >
+    <div class="br-input">
+        <label for="simples">Login</label>
+        <input type = "text" name = "email" placeholder = "Email" ngModel>
+    </div>
+    <br/>
+    <div class="br-input">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="pwd" placeholder="Digite sua senha de até 10 digitos">
+    </div>
+    <br/>
+    <button type = "submit">ENTRAR</button>
+</form>

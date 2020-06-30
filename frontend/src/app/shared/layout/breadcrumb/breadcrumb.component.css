@@ -1,0 +1,52 @@
+/*!
+http://dsgov.estaleiro.serpro.gov.br/ds/componentes/breadcrumb
+ * breadcrumb - 0.1.1 */
+.breadcrumb {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: var(--vertical) 0;
+  width: 100%;
+}
+
+.breadcrumb .home a {
+  color: #333333;
+}
+
+.breadcrumb .home a:hover,
+.breadcrumb .home a:focus {
+  color: #2670e8;
+  text-decoration: none;
+}
+
+.breadcrumb li {
+  color: var(--cor-texto);
+  display: inline;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.breadcrumb li a {
+  color: var(--cor-texto);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.breadcrumb li + li:before {
+  content: " » ";
+}
+.breadcrumb li + li.limpar:before {
+  content: "";
+}
+.breadcrumb li + li.limpar {
+  float: right;
+}
+
+.breadcrumb li a.ativo {
+  color: #2670e8;
+}

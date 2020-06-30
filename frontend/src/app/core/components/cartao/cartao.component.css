@@ -1,0 +1,32 @@
+:host{
+    position: relative;
+    border: solid 2px var(--cor-fundo);
+    box-shadow: 0 0 10px var(--cor-fundo);
+    border-radius: var(--border-radius);
+}
+:host:hover{
+    box-shadow: 0 0 10px var(--cor-fundo), 2px 2px 5px var(--cor-institucional);
+}
+button{
+    position: absolute;
+    bottom: var(--vertical);
+    right: var(--vertical);
+}
+
+
+h1.subtitulo{
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+.etiqueta {
+    background: white;
+    box-shadow: 2px 2px 4px var(--cor-texto-desbotado);
+    position: absolute;
+    bottom: 1em;
+    right: -6px;
+    padding: 0.2em 0.5em ;
+    text-shadow: none;
+    color: var(--cor-texto);
+    font-weight: normal;
+}

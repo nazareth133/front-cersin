@@ -1,0 +1,18 @@
+<div>
+  <h1 class="tituloImportacao">Importação de Arquivo</h1>
+  <div>
+    <ngx-ui-loader></ngx-ui-loader>
+    <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+      <div class="uploadArquivo">
+        <input type="file" name="profile" (change)="onFileSelect($event)" />
+      </div>
+      <p></p>
+      <br />
+      <div class="buttonUpload">
+        <button type="submit" [disabled]="uploadForm.controls.profile.invalid">
+          Upload
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

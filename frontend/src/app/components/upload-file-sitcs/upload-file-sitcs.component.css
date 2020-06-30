@@ -1,0 +1,17 @@
+.tituloImportacao {
+	color: #2969bd;
+	text-align: center;
+	font-size: 40px;
+}
+
+input {
+	width: auto;
+	text-align: center;
+	
+}
+form {
+	left: 31%;
+}
+.buttonUpload {
+	margin-left: 140px;
+}

@@ -1,0 +1,62 @@
+.denominacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usuario a,
+.usuario {
+  color: var(--cor-texto-claro)
+}
+
+.nome {
+  display: inline-block;
+}
+
+:host {
+  background: var(--cor-institucional);
+  padding: 10px 0;
+  box-shadow: -100px 0 0 var(--cor-institucional), 100px 0 0 var(--cor-institucional);
+}
+@media (min-width: 400px) {
+  :host {
+    box-shadow: calc( var(--grid-max) * 0.99) 0 0 var(--cor-institucional),
+    calc(var(--grid-max) * -0.99) 0 0 var(--cor-institucional);
+  }
+}
+
+h1 {
+  font-size: var(--texto-tamanho-titulo-noticia);
+  font-weight: var(--texto-estilo-titulo-pagina);
+  color: var(--cor-texto-claro);
+  margin: 0;
+}
+
+h1 a {
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+}
+
+h1 .classificacao-tipologica {
+  font-size: 10px;
+  font-weight: var(--texto-estilo);
+}
+
+.classificacao-tipologica:after {
+  content: "\a";
+  white-space: pre-line;
+}
+
+.nome-servico {
+  font-size: 15px;
+  font-weight: var(--texto-estilo);
+}
+.nome-orgao:after {
+  content: "\a";
+  white-space: pre-line;
+}
+.nome-orgao {
+  font-size: 50px;
+  
+}
+

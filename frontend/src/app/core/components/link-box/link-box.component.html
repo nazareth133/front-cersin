@@ -1,0 +1,8 @@
+<a
+  routerLink="{{conteudo.href}}"
+  class="link-servico"
+  title="{{conteudo.descricao}}"
+  style="background-image:url({{conteudo.fundo}})">
+  {{ conteudo.titulo }}
+  <span *ngIf="conteudo.subtitulo">{{ conteudo.subtitulo }}</span>
+</a>

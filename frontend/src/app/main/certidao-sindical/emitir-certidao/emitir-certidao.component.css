@@ -1,0 +1,83 @@
+.tab {
+    flex: 1 1 auto;
+  }
+  .tab2 {
+    flex: 1 1 auto;
+  }
+  
+  #centro {
+    text-align: center;
+  }
+  .meio {
+    text-align: center;
+  }
+  .especo {
+    line-height: 40px;
+    text-align: center;
+  }
+  .classe {
+    width: 650px;
+    height: 50px;
+    padding: 15px;
+  }
+  .fieldset {
+    text-align: left;
+    width: 1000px;
+    height: 570px;
+  }  
+  .paragrafoExtrato{
+    text-align: center;
+    font-size: 35px;
+    color: #2969bd;
+  }
+  .titulo2{
+    text-align: center;
+    font-size: 35px;
+    color: #C1CDCD;
+    ;
+  }
+  .texto{
+    text-align: center;
+  }
+  .titulo{
+    text-align: left;
+    font-size: 40px;
+    
+  }
+  .reCapatcha{
+    margin: 40px auto !important;
+    width: auto !important;
+    height: auto !important;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -o-center;
+    text-align: -ms-center;
+
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button2 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .button3 {
+    border: none;
+    color: white;
+    padding: 100px 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

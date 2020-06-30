@@ -1,0 +1,203 @@
+.main-container {
+    margin: 100px;
+  }
+  
+  mat-label {
+    float: left
+  }
+  
+  .paragrafoExtrato{
+    text-align: center;
+    font-size: 48px;
+    color: #2969bd;
+  }
+
+  .titulo2{
+    text-align: center;
+    font-size: 48px;
+    color: 	#E0EEEE;
+  }
+  
+  
+  .botao {
+    margin: 20px;
+    float: right;
+  }
+  
+  .date-picker {
+    margin-right: 20px;
+  }
+  
+  input {
+    text-align: center;
+  }
+  
+  label {
+    text-align: center;
+  }
+  
+  .button-row button,
+  .button-row a {
+    align-items: center;
+    background: #1351b4;
+    border: 1px solid #1351b4;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-flex;
+    height: 44px;
+    justify-content: center;
+    padding: 0 24px;
+    text-align: center;
+    font-size: 16px;
+    line-height: normal;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 600;
+    font-family: Rawline;
+    margin-right: 8px;
+  }
+  
+  .button-row button:hover,
+  .button-row a:hover {
+    background-color: #2670e8;
+    border-color: #2670e8;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .row {
+    padding: 15px;
+  }
+  
+  .form {
+    margin: 0 auto;
+    min-width: 150px;
+    max-width: 100%;
+    margin: 20px;
+  }
+  
+  .second-form1 {
+    width: 20%;
+    margin-right: 2ch;
+  }
+  .second-form2 {
+    width: 30%;
+    margin-right: 2ch;
+  }
+  
+  .cod-sindical-form {
+    margin-right: 2ch;
+    max-width: 133px;
+  }
+  
+  .container {
+    position: relative;
+    min-height: 200px;
+  }
+  
+  .table-container {
+    position: relative;
+    max-height: 400px;
+    overflow-x:auto;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .loading-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 56px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rate-limit-reached {
+    color: #980000;
+    max-width: 360px;
+    text-align: center;
+  }
+  
+  /* Column Widths */
+  .mat-column-number,
+  .mat-column-state {
+    max-width: 60px;
+  }
+  
+  .mat-column-created {
+    max-width: 124px;
+  }
+  
+  .classe {
+    width: 50px;
+    height: 150px;
+    border: 3px gray;
+    padding: 130px 590px;
+  }
+  .emissao {
+    padding: 12px 490px;
+  }
+  .tab {
+    width: 350px;
+    padding: 15px 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: rgb(238, 232, 232);
+    font-size: 18px;
+    text-decoration-color: white;
+  }
+  .tab2 {
+    width: 1000px;
+    padding: 015px 7px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: rgb(238, 232, 232);
+    font-size: 18px;
+    text-decoration-color: white;
+  }
+  .centro {
+    text-align: center;
+    width: 1000px;
+    height: 80px;
+  }
+  .direita {
+    text-align: right;
+    width: 1430px;
+    height: 60px;
+  }
+  .esquerda {
+    text-align: left;
+    width: 1430px;
+    height: 60px;
+  }
+  .esquerda1 {
+    text-align: left;
+    width: 1430px;
+    height: 110px;
+  }
+  .esquerda2 {
+    text-align: left;
+    width: 1430px;
+    height: 120px;
+  }
+  .fieldset {
+    text-align: left;
+    width: 1000px;
+    height: 400px;
+  }
+  #rodape {
+    position: absolute;
+    bottom: 0;
+  }
+  .barra {
+    flex: 1 1 auto;
+  }
+  .icone-barra {
+    padding: 0 14px;
+  }

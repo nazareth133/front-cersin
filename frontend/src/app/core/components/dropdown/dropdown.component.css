@@ -1,0 +1,56 @@
+:host {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.dropdown-menu {
+  display: none;
+  background: var(--cor-texto-claro);
+  border-radius: var(--border-radius);
+  width: var(--grid-3);
+  position: absolute;
+  box-shadow: -1px 3px 2px var(--cor-texto-desbotado);
+  right: 0;
+  top: 100%;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-menu h1 {
+  color: var(--cor-texto);
+  font-size: 18px;
+  font-weight: var(--texto-estilo-titulo-noticia);
+  padding: var(--vertical);
+}
+
+.dropdown-menu a {
+  font-size: 14px;
+  display: block;
+  padding: 8px 32px;
+  color: var(--cor-texto);
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background: var(--cor-texto-desbotado);
+}
+
+button.trigger {
+  /*noinspection CssUnknownTarget,CssUnknownTarget,CssUnknownTarget*/
+  background: url("/assets/images/arrow.svg") no-repeat;
+  border-radius: 50%;
+  border: 0;
+  margin-left: var(--vertical);
+  --size: 33px;
+  height: var(--size);
+  width: var(--size);
+  background-size: var(--size) !important;
+}
+
+button.trigger:hover {
+  box-shadow: 0 0 3px var(--cor-texto-claro);
+}
+

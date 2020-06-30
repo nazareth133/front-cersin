@@ -1,0 +1,30 @@
+a.link-servico {
+  color: var(--cor-texto);
+  font-weight: 900;
+  position: relative;
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  width: var(--grid-3);
+  height: var(--grid-3);
+  text-align: center;
+  text-decoration: none;
+}
+
+.link-servico:hover {
+  cursor: pointer;
+  background: var(--cor-servico);
+  color: var(--cor-texto-claro);
+}
+
+.link-servico:hover:before {
+  content: "";
+  background-image: url("/assets/images/sprite.png");
+  background-position: -160px -84px;
+  width: 37px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

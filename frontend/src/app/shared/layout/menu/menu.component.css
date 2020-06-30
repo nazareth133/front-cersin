@@ -1,0 +1,41 @@
+#navegacao{
+    z-index: 5;
+}
+.menu-item {
+    padding: 1em;
+}
+.descricao .longa,
+.descricao .resumo{
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .descricao .resumo{
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .descricao .longa{
+        display: block;
+    }
+    .descricao .resumo{
+        display: none;
+    }
+}
+
+.icone.menu.saiu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: var(--cor-institucional);
+    padding: 5px;
+    height: 20px;
+    animation: chegarDireita 500ms ease-out;
+    z-index: 6;
+}
+
+#navegacao.saiu {
+    position: fixed;
+    top: 0;
+}

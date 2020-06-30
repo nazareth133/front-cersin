@@ -1,0 +1,7 @@
+<header>
+    <h1>{{ conteudo.titulo }} <br><span class="subtitulo" *ngIf="conteudo.subtitulo">{{ conteudo.subtitulo }}</span></h1>
+</header>
+<main>
+    <div class="etiqueta" *ngIf="conteudo.etiqueta" >{{conteudo.etiqueta}}</div>
+    {{ conteudo.descricao }}
+</main>

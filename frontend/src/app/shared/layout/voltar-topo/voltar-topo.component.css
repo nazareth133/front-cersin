@@ -1,0 +1,21 @@
+:host{
+    display: contents;
+}
+#voltar-topo{
+    position: sticky;
+    bottom: 20px;
+    float: right;
+    opacity: 0.8;
+    transition: 0.4s all;
+    transform: translate(0,0);
+}
+
+#voltar-topo.oculto{
+    transform: translate(0, 500px);
+}
+
+#voltar-topo:hover{
+    opacity: 1;
+}
+
+

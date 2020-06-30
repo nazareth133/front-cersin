@@ -1,0 +1,251 @@
+  .br-input {
+    position: relative;
+  }
+  
+
+  .br-input label {
+    font-size: 16px;
+    line-height: normal;
+    color: #333333;
+    font-style: normal;
+    font-weight: 600;
+    font-family: Rawline;
+  }
+  
+  .br-input input,
+  .br-input textarea {
+    background: #ffffff;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    color: #555555;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+  
+  .br-input input::placeholder,
+  .br-input textarea::placeholder {
+    color: #555555;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    opacity: 1;
+  }
+  
+  .br-input textarea {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  
+  .br-input.has-icon input {
+    padding-right: 48px;
+  }
+  
+  .br-input.has-icon .icon {
+    background: transparent;
+    border: 0;
+    bottom: 0;
+    color: #555555;
+    font-size: 16px;
+    margin: 0;
+    min-width: 0;
+    padding: 0 16px;
+    position: absolute;
+    right: 0;
+    width: auto;
+  }
+  
+  .br-input.has-icon .icon:focus, .br-input.has-icon .icon:hover {
+    color: #555555;
+  }
+  
+  .br-input.has-icon .icon img {
+    max-width: 24px;
+    min-width: 24px;
+    transform: translate(0, -4px);
+  }
+  
+  .br-input.has-icon button.icon {
+    background: transparent;
+    border: 0;
+    bottom: 0;
+    color: #1351b4;
+    font-size: 16px;
+    margin: 0;
+    min-width: 0;
+    padding: 0 16px;
+    position: absolute;
+    right: 0;
+    width: auto;
+  }
+  
+  .br-input.has-icon button.icon:focus, .br-input.has-icon button.icon:hover {
+    color: #2670e8;
+  }
+  
+  .br-input input {
+    height: 24px;
+    width: 20%;
+    margin: 3px;
+  }
+  
+  .br-input .icon {
+    height: 48px;
+    line-height: 48px;
+  }
+  
+  .br-input.is-medium input {
+    height: 40px;
+  }
+  
+  .br-input.is-medium .icon {
+    height: 40px;
+    line-height: 40px;
+  }
+  
+  .br-input.is-small input {
+    height: 32px;
+  }
+  
+  .br-input.is-small .icon {
+    height: 32px;
+    line-height: 32px;
+  }
+  
+  .br-input input:focus,
+  .br-input textarea:focus {
+    border-color: #2670e8;
+    box-shadow: 0 0 0 1px #2670e8;
+    outline: none;
+  }
+  
+  .br-input input:invalid,
+  .br-input textarea:invalid {
+    border-color: #e60000;
+    box-shadow: 0 0 0 1px #e60000;
+    outline: none;
+  }
+  
+  .br-input input:disabled,
+  .br-input textarea:disabled {
+    background: #ededed;
+  }
+  
+  .br-input input:disabled + .icon,
+  .br-input input:disabled + button.icon,
+  .br-input textarea:disabled + .icon,
+  .br-input textarea:disabled + button.icon {
+    background: transparent;
+    border: 0;
+    bottom: 0;
+    color: #555555;
+    font-size: 16px;
+    margin: 0;
+    min-width: 0;
+    padding: 0 16px;
+    position: absolute;
+    right: 0;
+    width: auto;
+  }
+  
+  .br-input input:disabled + .icon:focus, .br-input input:disabled + .icon:hover,
+  .br-input input:disabled + button.icon:focus,
+  .br-input input:disabled + button.icon:hover,
+  .br-input textarea:disabled + .icon:focus,
+  .br-input textarea:disabled + .icon:hover,
+  .br-input textarea:disabled + button.icon:focus,
+  .br-input textarea:disabled + button.icon:hover {
+    color: #555555;
+  }
+  
+  .br-input.is-focus input,
+  .br-input.is-focus textarea {
+    border-color: #2670e8;
+    box-shadow: 0 0 0 1px #2670e8;
+    outline: none;
+  }
+  
+  .br-input.is-valid input,
+  .br-input.is-valid textarea {
+    border-color: #168821;
+    box-shadow: 0 0 0 1px #168821;
+    outline: none;
+  }
+  
+  .br-input.is-valid .icon,
+  .br-input.is-valid button.icon {
+    background: transparent;
+    border: 0;
+    bottom: 0;
+    color: #168821;
+    font-size: 16px;
+    margin: 0;
+    min-width: 0;
+    padding: 0 16px;
+    position: absolute;
+    right: 0;
+    width: auto;
+  }
+  
+  .br-input.is-valid .icon:focus, .br-input.is-valid .icon:hover,
+  .br-input.is-valid button.icon:focus,
+  .br-input.is-valid button.icon:hover {
+    color: #168821;
+  }
+  
+  .br-input.is-invalid input,
+  .br-input.is-invalid textarea {
+    border-color: #e60000;
+    box-shadow: 0 0 0 1px #e60000;
+    outline: none;
+  }
+  
+  .br-input.is-invalid .icon,
+  .br-input.is-invalid button.icon {
+    background: transparent;
+    border: 0;
+    bottom: 0;
+    color: #e60000;
+    font-size: 16px;
+    margin: 0;
+    min-width: 0;
+    padding: 0 16px;
+    position: absolute;
+    right: 0;
+    width: auto;
+  }
+  
+  .br-input.is-invalid .icon:focus, .br-input.is-invalid .icon:hover,
+  .br-input.is-invalid button.icon:focus,
+  .br-input.is-invalid button.icon:hover {
+    color: #e60000;
+  }
+  
+  .br-input.is-valid + .feedback {
+    color: #168821;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    padding: 4px;
+  }
+  
+  .br-input.is-invalid + .feedback {
+    color: #e60000;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    padding: 4px;
+  }
+  
+  .br-input + .help,
+  .br-input + .feedback + .help {
+    font-size: 13px;
+    line-height: normal;
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Rawline;
+  }

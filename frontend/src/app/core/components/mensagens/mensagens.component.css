@@ -1,0 +1,84 @@
+section#mensagens {
+  position: fixed;
+  top: var(--vertical4);
+  right: var(--vertical2);
+  z-index: 2;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  animation-name: fadeout;
+  animation-duration: 6s;
+  opacity: 0;
+  margin: var(--vertical);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 5px var(--cor-institucional-escuro);
+  padding: 0;
+}
+
+li .content {
+  padding: var(--vertical);
+  z-index: 2;
+  max-width: 35ch;
+}
+
+.content strong {
+  display: block;
+}
+
+.icon {
+  z-index: 2;
+  color: white;
+  font-size: 1.8em;
+  font-family: serif;
+  padding: var(--vertical3);
+  font-weight: bold;
+  height: 100%;
+  display: block;
+  align-self: stretch;
+}
+
+li.erro {
+  background: var(--cor-mensagem-erro-background);
+}
+.icon.erro {
+  background: var(--cor-mensagem-erro);
+}
+li.sucesso {
+  background: var(--cor-mensagem-sucesso-background);
+}
+.icon.sucesso {
+  background: var(--cor-mensagem-sucesso);
+}
+li.atencao {
+  background: var(--cor-mensagem-atencao-background);
+}
+.icon.atencao {
+  background: var(--cor-mensagem-atencao);
+}
+li.info {
+  background: var(--cor-mensagem-info-background);
+}
+.icon.info {
+  background: var(--cor-mensagem-info);
+}
+
+@keyframes fadeout {
+  0% {
+    transform: translate(0, -70px);
+  }
+  10% {
+    transform: translate(0px);
+    opacity: 0.5
+  }
+  20%, 80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,37 @@
+<form #register = "ngForm" (ngSubmit) = "onClickSubmit(register.value)" >
+    <div class="br-input">
+        <label for="simples">Login</label>
+        <input name="email" type = "text" name = "email" placeholder = "Email" ngModel>
+    </div>
+    <br/>
+    <div class="br-input">
+        <label for="simples">Nome</label>
+        <input name="nome" type = "text" name = "name" placeholder = "Nome" ngModel>
+    </div>
+    <br/>
+    <div class="br-input">
+        <label for="password">Senha</label>
+        <input name="pwd" type="password" id="password" placeholder="Digite sua senha de até 10 digitos">
+    </div>
+    <br/>
+    <div class="br-input">
+        <label for="simples">CPF</label>
+        <input name="cpf" type = "cpf" name = "cpf" placeholder = "CPF" ngModel mask="00000000000">
+    </div>
+    <br/>
+    <div class="br-input">
+        <label for="simples">Telefone</label>
+        <input name="telefone" type = "telefone" placeholder = "Telefone" mask="00000000000" ngModel>
+    </div>
+    <br />
+    <div class="br-select">
+        <label for="simples">Tipo de Usuário</label>
+        <br />
+        <select id="tipoUsuario" name="tipoUsuario">
+            <option value="gestor">Gestor</option>
+            <option value="comum">Comum</option>
+        </select>
+    </div>
+    <br/>
+    <button type = "submit">CADASTRAR</button>
+</form>

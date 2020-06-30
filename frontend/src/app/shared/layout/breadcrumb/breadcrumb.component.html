@@ -1,0 +1,13 @@
+<ul *ngIf="!isHome" class="breadcrumb">
+  <li *ngIf="links" class="home"><a routerLink="/" ><app-icon-home [size]="25"></app-icon-home></a></li>
+  <li *ngFor="let l of links" [classList]="l.class">
+    <a
+       [routerLink]="l.url"
+       [queryParams]="l.query"
+       [routerLinkActive]="'ativo'"
+       title="{{l.descricao}}">
+      {{l.titulo}}
+    </a>
+  </li>
+  <li class="limpar" *ngIf="links?.length > 6"><a title="Limpar links de navegação" (click)="this.breadcrumbService.resetBreacrumb()">limpar</a></li>
+</ul>

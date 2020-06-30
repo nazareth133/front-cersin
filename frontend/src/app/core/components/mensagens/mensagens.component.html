@@ -1,0 +1,11 @@
+<section *ngIf="fila" id="mensagens">
+  <ul class="mensagens">
+    <li *ngFor="let mensagem of fila" (click)="remove(mensagem)" class="mensagem alert {{mensagem.tipo}}">
+      <div class="icon {{mensagem.tipo}}">{{icons[mensagem.tipo]}}</div>
+      <div class="content">
+        <strong>{{mensagem.titulo}}</strong>
+        {{mensagem.descricao}}
+      </div>
+    </li>
+  </ul>
+</section>
